@@ -8,6 +8,7 @@ export default function DesktopMenu() {
         {NAV_LINKS.map((link, i) => (
             <li
                 key={i}
+                className='text-lg font-medium text-foreground/60 hover:text-foreground transition-colors duration-300'
             >
                 <Link href={link.href}>
                     {link.label}
