@@ -6,7 +6,7 @@ import { Testimonial } from '@/types'
 export default function CardTestimonial({ testimonial }: { testimonial: Testimonial }) {
   return (
     // Contenedor principal: Usamos relative y mt-12 para dar espacio a la foto que sobresale arriba
-    <div className="relative w-full bg-zinc-900 border border-white/10 rounded-3xl pt-16 pb-8 px-6 md:px-8 flex flex-col items-center mt-12 select-none">
+    <div className="relative w-full bg-zinc-900 border border-white/20 rounded-sm pt-16 pb-8 px-6 md:px-8 flex flex-col items-center mt-12 select-none">
       
       {/* ================= FOTO CIRCULAR SUPERIOR (Rompe el borde superior) ================= */}
       {/* Con absolute, top-0 y -translate-y-1/2 la clavamos exactamente a la mitad del borde de arriba */}
@@ -29,7 +29,7 @@ export default function CardTestimonial({ testimonial }: { testimonial: Testimon
         </p>
         
         {/* Bloque Inferior: Autor y Comillas decorativas */}
-        <div className="relative flex justify-between items-end pt-4 border-t border-white/5 w-full">
+        <div className="relative flex justify-between items-end pt-4 border-t border-white/20 w-full">
           
           {/* Datos del Cliente (Alineados a la izquierda para mantener el orden de lectura) */}
           <div className="flex flex-col text-left">
@@ -43,7 +43,7 @@ export default function CardTestimonial({ testimonial }: { testimonial: Testimon
 
           {/* Comillas gigantes en la esquina inferior derecha (Estilo de la imagen de referencia) */}
           {/* Con -mb-4 y translate-y-2 hacemos que asomen ligeramente de forma muy editorial */}
-          <span className="font-serif text-zinc-800 text-7xl leading-none select-none pointer-events-none translate-y-4">
+          <span className="font-serif text-zinc-600 text-7xl leading-none select-none pointer-events-none translate-y-4">
             ”
           </span>
 

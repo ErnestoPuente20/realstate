@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {syne, urbanist} from '@/app/fonts'
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

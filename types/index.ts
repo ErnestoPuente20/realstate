@@ -6,3 +6,8 @@ export interface Testimonial {
   company: string;
   image: string;
 }
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
