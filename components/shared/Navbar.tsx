@@ -80,15 +80,17 @@ export default function Navbar() {
         </div>
 
         <div className='hidden md:block'>
-          <button className='group relative overflow-hidden border-2 border-foreground rounded-sm py-2 px-4 font-semibold text-foreground transition-colors duration-300 hover:text-background'>
-            
-            <span className='absolute inset-0 -translate-x-full bg-foreground transition-transform duration-300 ease-out group-hover:translate-x-0' />
-            
-            <span className='relative z-10'>
-              Encontrar una casa
-            </span>
-
-          </button>
+          <Link href="#propiedades" scroll={true}>
+            <button
+              className='group relative overflow-hidden border-2 border-foreground rounded-sm py-2 px-4 font-semibold text-foreground transition-colors duration-300 hover:text-background'
+            >
+              <span className='absolute inset-0 -translate-x-full bg-foreground transition-transform duration-300 ease-out group-hover:translate-x-0' />
+              
+              <span className='relative z-10'>
+                Encontrar una casa
+              </span>
+            </button>
+          </Link>
         </div>
 
         {/* Menú móvil (Hamburguesa) */}

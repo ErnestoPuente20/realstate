@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap'
+import Link from 'next/link'
 
 export default function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -84,13 +85,15 @@ export default function Hero() {
           Diseño vanguardista y ubicaciones exclusivas en los entornos más cotizados. Descubre una nueva forma de habitar.
         </p>
 
-        <div className="mt-6"> {/* Envolvemos el botón en un div para evitar conflictos de animación con sus pseudo-elementos */}
-          <button className='group relative overflow-hidden px-5 py-3 bg-foreground text-background rounded-sm border-2 border-foreground transition-colors duration-300 hover:text-foreground'>
-            <span className='absolute inset-0 bg-background -translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0'/>
-            <span className='relative font-semibold text-md tracking-wider'>
-              Ver propiedades
-            </span>
-          </button>
+        <div className="mt-6">
+          <Link href="#propiedades" scroll={true}>
+            <button className='group relative overflow-hidden px-5 py-3 bg-foreground text-background rounded-sm border-2 border-foreground transition-colors duration-300 hover:text-foreground'>
+              <span className='absolute inset-0 bg-background -translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0'/>
+              <span className='relative font-semibold text-md tracking-wider'>
+                Ver propiedades
+              </span>
+            </button>
+          </Link> Envolvemos el botón en un div para evitar conflictos de animación con sus pseudo-elementos 
         </div>
       </div>
 
