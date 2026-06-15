@@ -93,7 +93,7 @@ export default function Hero() {
                 Ver propiedades
               </span>
             </button>
-          </Link> Envolvemos el botón en un div para evitar conflictos de animación con sus pseudo-elementos 
+          </Link>
         </div>
       </div>
 
