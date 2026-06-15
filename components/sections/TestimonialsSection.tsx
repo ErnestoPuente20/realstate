@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { TESTIMONIALS } from '@/data/testimonials'
 import CardTestimonial from './ui/CardTestimonial'
 import gsap from 'gsap'

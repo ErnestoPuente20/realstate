@@ -1,7 +1,6 @@
 'use client'
 
 import { NAV_LINKS } from '@/constants'
-import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 
@@ -87,24 +86,26 @@ export default function MobileMenu({ isOpen, closeMenu }: MobileMenuProps) {
               key={i}
               className='w-full border-b pb-4 border-zinc-200'
             >
-              <Link
+              <a
                 href={link.href}
                 onClick={closeMenu}
                 className='text-3xl font-serif font-medium hover:pl-4 transition-all duration-300 block text-zinc-900'
               >
                 {link.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
 
         <div ref={buttonRef} className='w-full pt-4'>
-          <button 
-            onClick={closeMenu}
-            className='w-full border-2 border-zinc-900 rounded-sm py-4 px-6 font-semibold text-zinc-900 bg-transparent transition-all duration-300 active:bg-zinc-900 active:text-white text-center text-lg'
-          >
-            Encontrar una casa
-          </button>
+          <a href="#propiedades" onClick={closeMenu} className="block w-full">
+            <button 
+              onClick={closeMenu}
+              className='w-full border-2 border-zinc-900 rounded-sm py-4 px-6 font-semibold text-zinc-900 bg-transparent transition-all duration-300 active:bg-zinc-900 active:text-white text-center text-lg'
+            >
+              Encontrar una casa
+            </button>
+          </a>       
         </div>
       </div>
     </div>

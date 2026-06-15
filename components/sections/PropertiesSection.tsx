@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { PROPERTIES_DATA } from '@/data/properties';
 import CardProperties from './ui/CardProperties';
 import gsap from 'gsap'

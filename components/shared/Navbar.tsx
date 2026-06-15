@@ -80,7 +80,7 @@ export default function Navbar() {
         </div>
 
         <div className='hidden md:block'>
-          <Link href="#propiedades" scroll={true}>
+          <a href="#propiedades">
             <button
               className='group relative overflow-hidden border-2 border-foreground rounded-sm py-2 px-4 font-semibold text-foreground transition-colors duration-300 hover:text-background'
             >
@@ -90,7 +90,7 @@ export default function Navbar() {
                 Encontrar una casa
               </span>
             </button>
-          </Link>
+          </a>
         </div>
 
         {/* Menú móvil (Hamburguesa) */}

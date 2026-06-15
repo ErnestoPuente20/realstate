@@ -1,9 +1,8 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap'
-import Link from 'next/link'
 
 export default function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -46,6 +45,7 @@ export default function Hero() {
 
   return (
     <section
+      id='hero'
       ref={sectionRef} 
       className="relative h-screen w-full overflow-hidden bg-background opacity-0"
     >
@@ -86,14 +86,14 @@ export default function Hero() {
         </p>
 
         <div className="mt-6">
-          <Link href="#propiedades" scroll={true}>
+          <a href="#propiedades">
             <button className='group relative overflow-hidden px-5 py-3 bg-foreground text-background rounded-sm border-2 border-foreground transition-colors duration-300 hover:text-foreground'>
               <span className='absolute inset-0 bg-background -translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0'/>
               <span className='relative font-semibold text-md tracking-wider'>
                 Ver propiedades
               </span>
             </button>
-          </Link>
+          </a>         
         </div>
       </div>
 
